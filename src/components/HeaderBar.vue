@@ -84,6 +84,9 @@ onMounted(() => {
     grid-template-columns: 5rem 1fr 2fr 1fr 5rem;
     background-color: var(--y-color-base-2);
     color: var(--y-color-base-1);
+    @media only screen and (max-width: $bp-xs) {
+      grid-template-columns: 2rem 1fr 2fr 1fr 2rem;
+    }
   }
 
   &_logo {
@@ -126,6 +129,7 @@ onMounted(() => {
     grid-row: 1 / 2;
     grid-column: 4 / 5;
     justify-self: flex-end;
+    align-self: center;
 
     @extend %btn;
     &::before,
