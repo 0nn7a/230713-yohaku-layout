@@ -1,0 +1,25 @@
+#app {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 5rem [full-s] 1fr [full-e] 5rem;
+  font-family: inherit;
+  background-color: var(--y-color-base-1);
+  background-image: url("/src/assets/images/bg.png");
+  background-size: 500px;
+  overflow: hidden auto;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  @media only screen and (max-width: $bp-md) {
+    grid-template-rows: 120rem;
+  }
+  @media only screen and (max-width: $bp-sm) {
+    grid-template-columns: 2rem [full-s] 1fr [full-e] 2rem;
+  }
+  @media only screen and (max-width: $bp-xs) {
+    grid-template-columns: 0 [full-s] 1fr [full-e] 0;
+  }
+}

@@ -1,0 +1,22 @@
+:root {
+  --y-color-white: #fff;
+
+  --y-color-title: #000;
+  --y-color-text: #000;
+  --y-color-subtext: #60686c;
+  --y-color-border: #aeb4b7;
+
+  --y-color-light: #d6dadb;
+  --y-color-hover: #aeb4b7;
+
+  --y-color-key-1: #553f23;
+  --y-color-key-2: #935d2d;
+  --y-color-base-1: #fafafa;
+  --y-color-base-2: #303436;
+}
+
+// Break Point
+$bp-xs: 425px;
+$bp-sm: 680px;
+$bp-md: 900px;
+$bp-lg: 1200px;
