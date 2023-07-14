@@ -53,7 +53,7 @@ onMounted(() => {
     writing-mode: vertical-lr;
     letter-spacing: 3px;
     @media only screen and (min-width: $bp-lg) {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
     }
   }
   &_paragraph {

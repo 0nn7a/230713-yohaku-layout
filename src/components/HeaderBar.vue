@@ -91,7 +91,7 @@ onMounted(() => {
 
   &_logo {
     grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
 
     display: flex;
     align-items: center;
@@ -202,6 +202,9 @@ onMounted(() => {
   transition: all 0.25s ease-out;
   &:hover {
     color: var(--y-color-subtext);
+  }
+  @media only screen and (min-width: $bp-lg) {
+    font-size: 1.5rem;
   }
 }
 </style>
