@@ -38,8 +38,8 @@ onMounted(() => {
       </button>
       <nav class="header_nav">
         <a href="#home" class="header_link" @click="toggleMenu">Top</a>
-        <a href="#about" class="header_link" @click="toggleMenu">About</a>
-        <a href="#" class="header_link">Sustainability</a>
+        <a href="#about" class="header_link" @click="toggleMenu">About us</a>
+        <a href="#story" class="header_link" @click="toggleMenu">Brand Story</a>
         <a href="#" class="header_link">Service</a>
         <a href="#" class="header_link">Profile</a>
         <a href="#" class="header_link">Information</a>

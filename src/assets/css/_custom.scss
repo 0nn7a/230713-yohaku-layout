@@ -3,8 +3,8 @@
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 100vh max-content;
-  grid-template-columns: 5rem [full-s] 1fr [full-e] 5rem;
+  grid-template-rows: 100vh max-content max-content;
+  grid-template-columns: 5rem [full-s] calc(100vw - 10rem) [full-e] 5rem;
   font-family: inherit;
   background-color: var(--y-color-base-1);
   background-image: url("/src/assets/images/bg.png");
@@ -14,10 +14,8 @@
   &::-webkit-scrollbar {
     width: 0;
   }
-  @media only screen and (max-width: $bp-md) {
-    grid-template-rows: 120rem max-content;
-  }
   @media only screen and (max-width: $bp-sm) {
+    grid-template-rows: 120rem max-content max-content;
     grid-template-columns: 2rem [full-s] calc(100vw - 4rem) [full-e] 2rem;
   }
   @media only screen and (max-width: $bp-xs) {
@@ -43,13 +41,13 @@
 .heading {
   &-1 {
     font-family: Jost, sans-serif;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 500;
     letter-spacing: 1px;
     color: var(--y-color-title);
     border-bottom: 1px solid currentColor;
     @media only screen and (max-width: $bp-xl) {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
     @media only screen and (max-width: $bp-lg) {
       font-size: 1.6rem;
@@ -61,12 +59,13 @@
 }
 .plain-text {
   font-family: "Shippori Mincho", "Zen Old Mincho", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
-  letter-spacing: 1px;
-  color: var(--y-color-subtext);
+  line-height: 2;
+  letter-spacing: 1.5px;
+  color: var(--y-color-text);
   @media only screen and (max-width: $bp-xl) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   @media only screen and (max-width: $bp-lg) {
     font-size: 1.3rem;

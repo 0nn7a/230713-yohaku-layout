@@ -10,6 +10,7 @@ declare module 'vue' {
     AboutPage: typeof import('./src/components/AboutPage.vue')['default']
     HeaderBar: typeof import('./src/components/HeaderBar.vue')['default']
     HomePage: typeof import('./src/components/HomePage.vue')['default']
+    StoryPage: typeof import('./src/components/StoryPage.vue')['default']
     SvgIcon: typeof import('./src/components/SvgIcon.vue')['default']
   }
 }

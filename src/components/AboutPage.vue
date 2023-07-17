@@ -33,7 +33,7 @@ onUnmounted(() => {
     <div class="about_img mb-3"></div>
     <h3 class="heading-1 mb-2">About us</h3>
     <p class="plain-text">
-      醇萃——提供安靜的環境與香醇的咖啡，陪伴您度過一段悠閒的時光。
+      提供安靜的環境與香醇的咖啡，陪伴您度過一段悠閒的時光。
     </p>
   </section>
 </template>
@@ -47,7 +47,8 @@ onUnmounted(() => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15rem 0;
+    padding: 15rem 5rem 10rem;
+    text-align: center;
     & > * {
       opacity: 0;
     }
@@ -57,6 +58,8 @@ onUnmounted(() => {
     width: 50rem;
     background: url("/src/assets/images/about_1.jpg") center no-repeat;
     background-size: cover;
+  }
+  .plain-text {
   }
 }
 </style>

@@ -84,8 +84,8 @@ a {
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 100vh max-content;
-  grid-template-columns: 5rem [full-s] 1fr [full-e] 5rem;
+  grid-template-rows: 100vh max-content max-content;
+  grid-template-columns: 5rem [full-s] calc(100vw - 10rem) [full-e] 5rem;
   font-family: inherit;
   background-color: var(--y-color-base-1);
   background-image: url("/src/assets/images/bg.png");
@@ -96,13 +96,9 @@ a {
 #app::-webkit-scrollbar {
   width: 0;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 735px) {
   #app {
-    grid-template-rows: 120rem max-content;
-  }
-}
-@media only screen and (max-width: 680px) {
-  #app {
+    grid-template-rows: 120rem max-content max-content;
     grid-template-columns: 2rem [full-s] calc(100vw - 4rem) [full-e] 2rem;
   }
 }
@@ -127,7 +123,7 @@ a {
 
 .heading-1 {
   font-family: Jost, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 500;
   letter-spacing: 1px;
   color: var(--y-color-title);
@@ -135,7 +131,7 @@ a {
 }
 @media only screen and (max-width: 1600px) {
   .heading-1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -151,14 +147,15 @@ a {
 
 .plain-text {
   font-family: "Shippori Mincho", "Zen Old Mincho", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
-  letter-spacing: 1px;
-  color: var(--y-color-subtext);
+  line-height: 2;
+  letter-spacing: 1.5px;
+  color: var(--y-color-text);
 }
 @media only screen and (max-width: 1600px) {
   .plain-text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 @media only screen and (max-width: 1200px) {

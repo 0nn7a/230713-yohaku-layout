@@ -7,6 +7,7 @@ provide("appDom", appDom);
   <HeaderBar />
   <HomePage />
   <AboutPage />
+  <StoryPage />
 </template>
 
 <style lang="scss" scoped></style>
