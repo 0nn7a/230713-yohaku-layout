@@ -66,6 +66,7 @@ onMounted(() => {
     width: 100%;
     padding: 0 5rem;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background-color: hsla(0, 0%, 100%, 0.5);
     color: var(--y-color-text);
     @media only screen and (max-width: $bp-xs) {
