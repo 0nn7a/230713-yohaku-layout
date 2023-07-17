@@ -32,8 +32,8 @@ onMounted(() => {
     width: 100%;
     padding-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(2, minmax(400px, 1fr));
-    @media only screen and (max-width: $bp-md) {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    @media only screen and (max-width: $bp-sm) {
       grid-template-rows: max-content 1fr;
       grid-template-columns: 1fr;
     }

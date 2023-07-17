@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700;800&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap");
 :root {
   --y-color-white: #fff;
@@ -7,6 +8,7 @@
   --y-color-border: #aeb4b7;
   --y-color-light: #d6dadb;
   --y-color-hover: #aeb4b7;
+  --y-color-cover: rgba(224, 197, 166, 0.08);
   --y-color-key-1: #553f23;
   --y-color-key-2: #935d2d;
   --y-color-base-1: #fafafa;
@@ -84,8 +86,8 @@ a {
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 100vh max-content;
-  grid-template-columns: 5rem [full-s] 1fr [full-e] 5rem;
+  grid-template-rows: 100vh repeat(3, max-content);
+  grid-template-columns: 5rem [full-s] calc(100vw - 10rem) [full-e] 5rem;
   font-family: inherit;
   background-color: var(--y-color-base-1);
   background-image: url("/src/assets/images/bg.png");
@@ -96,13 +98,9 @@ a {
 #app::-webkit-scrollbar {
   width: 0;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 735px) {
   #app {
-    grid-template-rows: 120rem max-content;
-  }
-}
-@media only screen and (max-width: 680px) {
-  #app {
+    grid-template-rows: 120rem repeat(3, max-content);
     grid-template-columns: 2rem [full-s] calc(100vw - 4rem) [full-e] 2rem;
   }
 }
@@ -127,7 +125,7 @@ a {
 
 .heading-1 {
   font-family: Jost, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 500;
   letter-spacing: 1px;
   color: var(--y-color-title);
@@ -135,7 +133,7 @@ a {
 }
 @media only screen and (max-width: 1600px) {
   .heading-1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -148,17 +146,32 @@ a {
     font-size: 1.4rem;
   }
 }
-
-.plain-text {
+.heading-2 {
+  font-family: "EB Garamond", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--y-color-title);
+}
+.heading-3 {
   font-family: "Shippori Mincho", "Zen Old Mincho", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 1px;
   color: var(--y-color-subtext);
 }
+
+.plain-text {
+  font-family: "Shippori Mincho", "Zen Old Mincho", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 1.5px;
+  color: var(--y-color-text);
+}
 @media only screen and (max-width: 1600px) {
   .plain-text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -169,6 +182,30 @@ a {
 @media only screen and (max-width: 900px) {
   .plain-text {
     font-size: 1.2rem;
+  }
+}
+
+.plain-text-2 {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", メイリオ, Meiryo, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 1.5px;
+  color: var(--y-color-text);
+}
+@media only screen and (max-width: 1600px) {
+  .plain-text-2 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .plain-text-2 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .plain-text-2 {
+    font-size: 1.1rem;
   }
 }
 

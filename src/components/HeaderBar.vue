@@ -38,11 +38,11 @@ onMounted(() => {
       </button>
       <nav class="header_nav">
         <a href="#home" class="header_link" @click="toggleMenu">Top</a>
-        <a href="#about" class="header_link" @click="toggleMenu">About</a>
-        <a href="#" class="header_link">Sustainability</a>
-        <a href="#" class="header_link">Service</a>
-        <a href="#" class="header_link">Profile</a>
-        <a href="#" class="header_link">Information</a>
+        <a href="#about" class="header_link" @click="toggleMenu">About us</a>
+        <a href="#story" class="header_link" @click="toggleMenu">Brand Story</a>
+        <a href="#feature" class="header_link" @click="toggleMenu">Feature</a>
+        <a href="#" class="header_link" @click="toggleMenu">Profile</a>
+        <a href="#" class="header_link" @click="toggleMenu">Information</a>
       </nav>
       <div class="header_footer">
         <p>2074-1 Kobukicho, Mito-shi,</p>
@@ -161,16 +161,33 @@ onMounted(() => {
     color: var(--y-color-base-1);
   }
   &_link {
-    padding: 0.5rem;
+    position: relative;
+    padding: 0.5rem 1rem;
     font-family: Jost, sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 1px;
     color: inherit;
-    transition: all 0.25s ease-out;
-    &:hover {
-      color: var(--y-color-text);
+    transition: all 0.3s ease-out;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: 100%;
+      width: 3px;
+      transform: scaleY(0);
       background-color: var(--y-color-base-1);
+      transition: transform 0.2s ease-out,
+        width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s ease-out;
+    }
+    &:hover {
+      color: var(--y-color-base-2);
+      &::before {
+        width: 100%;
+        transform: scaleY(1);
+      }
     }
     @media only screen and (min-width: $bp-sm) {
       font-size: 1.8rem;
