@@ -37,8 +37,8 @@ onMounted(() => {
         Close
       </button>
       <nav class="header_nav">
-        <a href="#" class="header_link">About</a>
-        <a href="#" class="header_link">Philosophy</a>
+        <a href="#home" class="header_link" @click="toggleMenu">Top</a>
+        <a href="#about" class="header_link" @click="toggleMenu">About</a>
         <a href="#" class="header_link">Sustainability</a>
         <a href="#" class="header_link">Service</a>
         <a href="#" class="header_link">Profile</a>
@@ -172,6 +172,12 @@ onMounted(() => {
       color: var(--y-color-text);
       background-color: var(--y-color-base-1);
     }
+    @media only screen and (min-width: $bp-sm) {
+      font-size: 1.8rem;
+    }
+    @media only screen and (min-width: $bp-xl) {
+      font-size: 2.2rem;
+    }
   }
   &_footer {
     grid-row: 3 / 4;
@@ -179,12 +185,18 @@ onMounted(() => {
     justify-self: center;
 
     font-family: Jost, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     text-align: center;
     line-height: 2;
     letter-spacing: 1px;
     padding: 5rem 0;
+    @media only screen and (min-width: $bp-sm) {
+      font-size: 1.3rem;
+    }
+    @media only screen and (min-width: $bp-xl) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -204,6 +216,7 @@ onMounted(() => {
     color: var(--y-color-subtext);
   }
   @media only screen and (min-width: $bp-lg) {
+    padding-left: 1.8rem;
     font-size: 1.5rem;
   }
 }

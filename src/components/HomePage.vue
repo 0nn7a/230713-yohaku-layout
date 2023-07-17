@@ -1,13 +1,14 @@
 <script setup>
-import { scrollFadeIn } from "@/plugins/animate.js";
+import { fadeIn } from "@/plugins/animate.js";
 const elsDom = ref(null);
+
 onMounted(() => {
-  scrollFadeIn(elsDom.value);
+  fadeIn(elsDom.value, 300);
 });
 </script>
 
 <template>
-  <section class="home_container" ref="elsDom">
+  <section id="home" class="home_container" ref="elsDom">
     <div class="home_content">
       <h1 class="home_title">「醇萃」香氣中的美好時光。</h1>
       <p class="home_paragraph">
@@ -25,6 +26,7 @@ onMounted(() => {
 
 .home {
   &_container {
+    grid-row: 1 / span 1;
     grid-column: full-s / full-e;
     height: 100%;
     width: 100%;
