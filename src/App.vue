@@ -9,6 +9,7 @@ provide("appDom", appDom);
   <AboutPage />
   <StoryPage />
   <FeaturePage />
+  <PricePage />
 </template>
 
 <style lang="scss" scoped></style>

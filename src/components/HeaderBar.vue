@@ -41,7 +41,7 @@ onMounted(() => {
         <a href="#about" class="header_link" @click="toggleMenu">About us</a>
         <a href="#story" class="header_link" @click="toggleMenu">Brand Story</a>
         <a href="#feature" class="header_link" @click="toggleMenu">Feature</a>
-        <a href="#" class="header_link" @click="toggleMenu">Profile</a>
+        <a href="#price" class="header_link" @click="toggleMenu">Price Menu</a>
         <a href="#" class="header_link" @click="toggleMenu">Information</a>
       </nav>
       <div class="header_footer">
