@@ -156,7 +156,7 @@ const menu = reactive({
         <p class="price_menu_subtext">容量選擇</p>
         <br />
         <div class="price_note_set">
-          <div class="price_note_title">特大杯 600 ml</div>
+          <div class="price_note_title">特大杯 600ml</div>
           <span class="price_note_money">+ $30</span>
         </div>
         <br />
@@ -197,6 +197,12 @@ const menu = reactive({
     }
     @media only screen and (max-width: $bp-xs) {
       padding: 10rem 0;
+    }
+    @media only screen and (min-width: $bp-lg) {
+      padding: 10rem 8rem;
+    }
+    @media only screen and (min-width: $bp-xl) {
+      padding: 10rem 14rem;
     }
     & > * {
       opacity: 0;

@@ -1,6 +1,6 @@
 import anime from "animejs";
 
-export function fadeIn(element, delay = 150) {
+export function fadeIn(element, delay = 10) {
   anime({
     targets: element,
     opacity: [0, 1],

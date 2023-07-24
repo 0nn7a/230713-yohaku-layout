@@ -21,6 +21,12 @@
   @media only screen and (max-width: $bp-xs) {
     grid-template-columns: 0 [full-s] 100vw [full-e] 0;
   }
+  @media only screen and (min-width: $bp-lg) {
+    grid-template-columns: 8rem [full-s] calc(100vw - 16rem) [full-e] 8rem;
+  }
+  @media only screen and (min-width: $bp-xl) {
+    grid-template-columns: 14rem [full-s] calc(100vw - 28rem) [full-e] 14rem;
+  }
 }
 
 .mb {
@@ -72,7 +78,7 @@
   }
 }
 .plain-text {
-  font-family: "Shippori Mincho", "Zen Old Mincho", sans-serif;
+  font-family: "Zen Old Mincho", "Shippori Mincho",  sans-serif;
   font-size: 2rem;
   font-weight: 500;
   line-height: 2;

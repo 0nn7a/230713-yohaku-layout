@@ -217,7 +217,7 @@ const content = reactive({
 
   &_footer {
     display: grid;
-    grid-template-rows: max-content 1fr;
+    grid-template-rows: max-content max-content;
     grid-template-columns: 32vw max-content 1fr;
     align-items: center;
     gap: 2rem 5rem;
@@ -249,6 +249,7 @@ const content = reactive({
     h4 {
       grid-row: 1 / span 1;
       grid-column: 2 / span 1;
+      align-self: flex-end;
       @media only screen and (max-width: $bp-md) {
         grid-row: 2 / span 1;
         grid-column: 1 / 2;
@@ -257,6 +258,7 @@ const content = reactive({
     h5 {
       grid-row: 1 / span 1;
       grid-column: 3 / span 1;
+      align-self: flex-end;
       @media only screen and (max-width: $bp-md) {
         grid-row: 2 / span 1;
         grid-column: 2 / -1;
@@ -265,6 +267,7 @@ const content = reactive({
     p {
       grid-row: 2 / span 1;
       grid-column: 2 / span 2;
+      align-self: flex-start;
       text-align: justify;
       @media only screen and (max-width: $bp-md) {
         grid-row: 3 / -1;

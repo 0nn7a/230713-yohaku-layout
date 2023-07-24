@@ -60,7 +60,7 @@ onMounted(() => {
     grid-column: 1 / -1;
     display: grid;
     grid-template-rows: max-content;
-    grid-template-columns: 35vw 1fr;
+    grid-template-columns: 34vw 1fr;
     gap: 0 6vw;
     padding: 10rem 5rem;
     background-color: var(--y-color-cover);
@@ -74,7 +74,11 @@ onMounted(() => {
       padding: 10rem 0;
     }
     @media only screen and (min-width: $bp-lg) {
-      grid-template-columns: 42vw 1fr;
+      grid-template-columns: 40vw 1fr;
+      padding: 10rem 8rem;
+    }
+    @media only screen and (min-width: $bp-xl) {
+      padding: 10rem 14rem;
     }
   }
   &_img {
@@ -111,10 +115,10 @@ onMounted(() => {
         }
       }
       @media only screen and (min-width: $bp-md) {
-        height: 28vw;
+        height: 30vw;
       }
       @media only screen and (min-width: $bp-lg) {
-        height: 24vw;
+        height: 26vw;
       }
     }
   }

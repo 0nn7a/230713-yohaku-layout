@@ -42,6 +42,7 @@ onMounted(() => {
         <a href="#story" class="header_link" @click="toggleMenu">Brand Story</a>
         <a href="#feature" class="header_link" @click="toggleMenu">Feature</a>
         <a href="#price" class="header_link" @click="toggleMenu">Price Menu</a>
+        <a href="#profile" class="header_link" @click="toggleMenu">Profile</a>
         <a href="#" class="header_link" @click="toggleMenu">Information</a>
       </nav>
       <div class="header_footer">
@@ -72,6 +73,9 @@ onMounted(() => {
     @media only screen and (max-width: $bp-xs) {
       padding: 0 2rem;
     }
+    @media only screen and (min-width: $bp-lg) {
+      padding: 0 8rem;
+    }
   }
   &_full {
     position: fixed;
@@ -87,6 +91,9 @@ onMounted(() => {
     color: var(--y-color-base-1);
     @media only screen and (max-width: $bp-xs) {
       grid-template-columns: 2rem 1fr 2fr 1fr 2rem;
+    }
+    @media only screen and (min-width: $bp-lg) {
+      grid-template-columns: 8rem 1fr 2fr 1fr 8rem;
     }
   }
 
