@@ -193,6 +193,7 @@ onUnmounted(() => {
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      padding: 1rem;
     }
     &_dot,
     &_dot-selected {
@@ -204,10 +205,13 @@ onUnmounted(() => {
       &::after {
         content: "";
         position: absolute;
+        top: 50%;
+        left: 50%;
         height: 0.6rem;
         width: 0.6rem;
         background-color: var(--y-color-white);
         border-radius: 50%;
+        transform: translate(-50%, -50%);
       }
       &:hover {
         opacity: 0.7;
@@ -217,11 +221,13 @@ onUnmounted(() => {
       &::before {
         content: "";
         position: absolute;
+        top: 50%;
+        left: 50%;
         height: 1.8rem;
         width: 1.8rem;
         border: 1px solid var(--y-color-white);
         border-radius: 50%;
-        transform: translate(-33%, -33%);
+        transform: translate(-50%, -50%);
       }
     }
   }
