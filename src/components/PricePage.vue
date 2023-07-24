@@ -69,7 +69,7 @@ const menu = reactive({
           v-for="item in menu.coffee"
           :key="item.title"
         >
-          <h6 class="price_menu_title">{{ item.title }}</h6>
+          <h6 class="heading-2">{{ item.title }}</h6>
           <p class="price_menu_subtext">{{ item.sub }}</p>
           <span class="price_menu_money">{{ item.money }}</span>
         </div>
@@ -81,7 +81,7 @@ const menu = reactive({
           v-for="item in menu.cookie"
           :key="item.title"
         >
-          <h6 class="price_menu_title">{{ item.title }}</h6>
+          <h6 class="heading-2">{{ item.title }}</h6>
           <p class="price_menu_subtext">{{ item.sub }}</p>
           <span class="price_menu_money">{{ item.money }}</span>
         </div>
@@ -93,7 +93,7 @@ const menu = reactive({
           v-for="item in menu.cake"
           :key="item.title"
         >
-          <h6 class="price_menu_title">{{ item.title }}</h6>
+          <h6 class="heading-2">{{ item.title }}</h6>
           <p class="price_menu_subtext">{{ item.sub }}</p>
           <span class="price_menu_money">{{ item.money }}</span>
         </div>
@@ -105,7 +105,7 @@ const menu = reactive({
           v-for="item in menu.other"
           :key="item.title"
         >
-          <h6 class="price_menu_title">{{ item.title }}</h6>
+          <h6 class="heading-2">{{ item.title }}</h6>
           <p class="price_menu_subtext">{{ item.sub }}</p>
           <span class="price_menu_money">{{ item.money }}</span>
         </div>
@@ -114,7 +114,7 @@ const menu = reactive({
 
     <div class="price_note">
       <div class="price_note_item">
-        <h6 class="price_menu_title">Milk Type</h6>
+        <h6 class="heading-2">Milk Type</h6>
         <p class="price_menu_subtext">奶類選擇</p>
         <br />
         <div class="price_note_set">
@@ -133,7 +133,7 @@ const menu = reactive({
         </div>
       </div>
       <div class="price_note_item">
-        <h6 class="price_menu_title">Add Flavor</h6>
+        <h6 class="heading-2">Add Flavor</h6>
         <p class="price_menu_subtext">添加風味</p>
         <br />
         <div class="price_note_set">
@@ -152,7 +152,7 @@ const menu = reactive({
         </div>
       </div>
       <div class="price_note_item">
-        <h6 class="price_menu_title">Size</h6>
+        <h6 class="heading-2">Size</h6>
         <p class="price_menu_subtext">容量選擇</p>
         <br />
         <div class="price_note_set">
@@ -298,7 +298,7 @@ const menu = reactive({
       grid-template-columns: 1fr max-content;
       gap: 0.1rem;
     }
-    &_title {
+    .heading-2 {
       grid-row: 1 / span 1;
       grid-column: 1 / span 1;
 

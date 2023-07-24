@@ -11,6 +11,7 @@ declare module 'vue' {
     FeaturePage: typeof import('./src/components/FeaturePage.vue')['default']
     HeaderBar: typeof import('./src/components/HeaderBar.vue')['default']
     HomePage: typeof import('./src/components/HomePage.vue')['default']
+    InformationPage: typeof import('./src/components/InformationPage.vue')['default']
     PricePage: typeof import('./src/components/PricePage.vue')['default']
     ProfilePage: typeof import('./src/components/ProfilePage.vue')['default']
     StoryPage: typeof import('./src/components/StoryPage.vue')['default']

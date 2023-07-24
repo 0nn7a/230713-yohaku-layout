@@ -20,3 +20,21 @@ export function autoOpacity(element) {
     autoplay: true,
   });
 }
+
+export function carouselShow(element) {
+  anime({
+    targets: element,
+    opacity: [0, 1],
+    duration: 1000,
+    easing: "easeInQuad",
+    delay: 20,
+  });
+}
+export function carouselClose(element) {
+  anime({
+    targets: element,
+    opacity: [1, 0],
+    duration: 1000,
+    easing: "easeInQuad",
+  });
+}

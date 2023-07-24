@@ -46,6 +46,7 @@ onMounted(() => {
     gap: 2rem 5rem;
     padding: 10rem 12rem;
     background-color: var(--y-color-cover);
+    opacity: 0;
     @media only screen and (max-width: $bp-sm) {
       grid-template-rows: repeat(3, max-content);
       grid-template-columns: 1fr;

@@ -43,7 +43,9 @@ onMounted(() => {
         <a href="#feature" class="header_link" @click="toggleMenu">Feature</a>
         <a href="#price" class="header_link" @click="toggleMenu">Price Menu</a>
         <a href="#profile" class="header_link" @click="toggleMenu">Profile</a>
-        <a href="#" class="header_link" @click="toggleMenu">Information</a>
+        <a href="#information" class="header_link" @click="toggleMenu"
+          >Information</a
+        >
       </nav>
       <div class="header_footer">
         <p>2074-1 Kobukicho, Mito-shi,</p>
