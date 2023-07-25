@@ -78,7 +78,15 @@ li {
 }
 
 a {
+  font-family: Zen Old Mincho, "Shippori Mincho", sans-serif;
+  font-size: inherit;
+  font-weight: inherit;
   text-decoration: none;
+  color: var(--y-color-key-2);
+  transition: all 0.25s ease-out;
+}
+a:hover {
+  opacity: 0.6;
 }
 
 #app {
@@ -86,7 +94,7 @@ a {
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 100vh repeat(6, max-content);
+  grid-template-rows: 100vh repeat(7, max-content);
   grid-template-columns: 5rem [full-s] calc(100vw - 10rem) [full-e] 5rem;
   font-family: inherit;
   background-color: var(--y-color-base-1);
@@ -100,7 +108,7 @@ a {
 }
 @media only screen and (max-width: 735px) {
   #app {
-    grid-template-rows: 120rem repeat(6, max-content);
+    grid-template-rows: 120rem repeat(7, max-content);
     grid-template-columns: 2rem [full-s] calc(100vw - 4rem) [full-e] 2rem;
   }
 }

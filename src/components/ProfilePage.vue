@@ -25,7 +25,16 @@ onMounted(() => {
       <h4 class="profile_name-zh">林奈 0nn</h4>
       <h5 class="profile_name-en">infj</h5>
       <p class="plain-text">
-        1999年生，畢業於國立臺灣師範大學，自學前端。此咖啡館網頁為一頁式切版的自主練習，圖片來自圖庫PhotoAC、Freepik，Icon來自SVGrepo、LogoToUse，佈局參考Yohaku網站，文案發想借助ChatGPT。
+        1999年生，畢業於國立臺灣師範大學，自學前端。此咖啡館網頁為一頁式切版的自主練習，圖片來自圖庫<a
+          href="https://zh-tw.photo-ac.com/"
+          >PhotoAC</a
+        >、<a href="https://www.freepik.com/">Freepik</a>，Icon來自<a
+          href="https://www.svgrepo.com/"
+          >SVGrepo</a
+        >、<a href="https://www.logotouse.com/">LogoToUse</a>，佈局參考<a
+          href="https://yohaku.salon/"
+          >Yohaku網站</a
+        >，文案發想借助<a href="https://chat.openai.com/">ChatGPT</a>。
       </p>
     </div>
   </section>
@@ -44,7 +53,7 @@ onMounted(() => {
     justify-items: flex-start;
     align-items: center;
     gap: 2rem 5rem;
-    padding: 10rem 12rem;
+    padding: 10rem 16vw;
     background-color: var(--y-color-cover);
     opacity: 0;
     @media only screen and (max-width: $bp-sm) {
@@ -72,6 +81,10 @@ onMounted(() => {
     @media only screen and (max-width: $bp-sm) {
       grid-row: 2 / span 1;
       margin: 3rem 0 1rem;
+    }
+    @media only screen and (min-width: $bp-lg) {
+      height: 24rem;
+      width: 24rem;
     }
   }
   &_content {

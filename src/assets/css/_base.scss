@@ -45,5 +45,13 @@ li {
   padding: 0;
 }
 a {
+  font-family: Zen Old Mincho, "Shippori Mincho", sans-serif;
+  font-size: inherit;
+  font-weight: inherit;
   text-decoration: none;
+  color: var(--y-color-key-2);
+  transition: all 0.25s ease-out;
+  &:hover {
+    opacity: 0.6;
+  }
 }
