@@ -64,9 +64,9 @@ onMounted(() => {
   &_container {
     grid-row: 8 / span 1;
     grid-column: full-s / full-e;
-    padding: 5rem 0;
+    padding: 5rem 0 10rem;
     @media only screen and (max-width: $bp-xs) {
-      padding: 5rem 3rem;
+      padding: 5rem 3rem 10rem;
     }
     //& > * {
     //    opacity: 0;

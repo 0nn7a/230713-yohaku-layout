@@ -46,7 +46,7 @@ onUnmounted(() => {
 
 .btn_to-top {
   position: fixed;
-  bottom: 4rem;
+  bottom: 9.3rem;
   right: 5rem;
   z-index: 90;
   display: block;
@@ -56,6 +56,9 @@ onUnmounted(() => {
   border-top: 1px solid var(--y-color-title);
   opacity: 0;
   transition: all 0.25s ease-out;
+  @media only screen and (max-width: $bp-xs) {
+    right: 2rem;
+  }
   span {
     content: "";
     position: absolute;
