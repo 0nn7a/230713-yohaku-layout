@@ -7,7 +7,7 @@ const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
 };
 onMounted(() => {
-  autoOpacity(header.value);
+  autoOpacity(header.value, 0);
 });
 </script>
 

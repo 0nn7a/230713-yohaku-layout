@@ -11,30 +11,32 @@ export function fadeIn(element, delay = 10) {
     once: true,
   });
 }
-export function autoOpacity(element) {
-  anime({
-    targets: element,
-    opacity: [0, 1],
-    duration: 1000,
-    easing: "easeInOutExpo",
-    autoplay: true,
-  });
-}
-
-export function carouselShow(element) {
+export function autoOpacity(element, delay = 0) {
   anime({
     targets: element,
     opacity: [0, 1],
     duration: 1000,
     easing: "easeInQuad",
-    delay: 20,
+    autoplay: true,
+    delay: delay,
   });
 }
-export function carouselClose(element) {
+
+export function carouselShow(element, delay = 20) {
+  anime({
+    targets: element,
+    opacity: [0, 1],
+    duration: 1000,
+    easing: "easeInQuad",
+    delay: delay,
+  });
+}
+export function carouselClose(element, delay = 0) {
   anime({
     targets: element,
     opacity: [1, 0],
     duration: 1000,
     easing: "easeInQuad",
+    delay: delay,
   });
 }

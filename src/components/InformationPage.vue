@@ -244,13 +244,6 @@ onUnmounted(() => {
   &_table {
     width: 100%;
     margin-top: 5rem;
-    @media only screen and (max-width: $bp-sm) {
-      width: 40rem;
-    }
-    @media only screen and (max-width: $bp-xs) {
-      width: 100%;
-      padding: 0 3rem;
-    }
     th {
       padding-right: 5rem;
     }
@@ -264,6 +257,21 @@ onUnmounted(() => {
       th,
       td {
         padding-bottom: 0;
+      }
+    }
+    @media only screen and (max-width: $bp-sm) {
+      width: 40rem;
+    }
+    @media only screen and (max-width: $bp-xs) {
+      table-layout: fixed;
+      width: 100%;
+      padding: 0 3rem;
+      th {
+        width: 6em;
+        padding-right: 0;
+      }
+      td {
+        word-wrap: break-word;
       }
     }
   }

@@ -4,10 +4,10 @@ import { carouselClose, fadeIn } from "@/plugins/animate.js";
 const appDom = document.querySelector("#app");
 provide("appDom", appDom);
 
+const opShow = ref(true);
 const toTop = () => {
   appDom.scrollTo({ top: 0, behavior: "smooth" });
 };
-
 const toTopDom = ref(null);
 
 const handleScroll = () => {
@@ -29,6 +29,7 @@ onUnmounted(() => {
 </script>
 
 <template>
+  <OpenLogo v-if="opShow" @to-close="opShow = false" />
   <a href="#" ref="toTopDom" class="btn_to-top" @click="toTop"><span></span></a>
   <HeaderBar />
   <HomePage />
